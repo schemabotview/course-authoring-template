@@ -18,9 +18,9 @@ Use this workflow for Linux, Python, Java, React, SQL, Spark, dbt, Terraform, cl
 | 02-planning | ai-prompt.md | course-plan.md |
 | 03-design | Adopted design; no AI prompt | design.md |
 | 04-implementation | ai-prompt.md authors courses section by section | implementation.md + source files + authoring-progress.md |
-| 05-test | ai-prompt.md | test-plan.md |
-| 06-deployment | ai-prompt.md | deployment.md |
-| 07-feedback | ai-prompt.md | feedback.md |
+| 05-test | Manual user review + checks during authoring | testing.md |
+| 06-deployment | Publishing procedure; no AI prompt | deployment.md |
+| 07-feedback | Manual user feedback; no AI prompt | feedback.md |
 
 ## Working conventions
 
@@ -30,7 +30,7 @@ Use this workflow for Linux, Python, Java, React, SQL, Spark, dbt, Terraform, cl
 - Author courses section by section after reviewing the curriculum and adopted design; `implementation.md` describes their production process.
 - Website content and video scripts should derive from the same approved section source.
 - Keep credentials and personal learner information out of prompts and the public repository.
-- The deployment prompt creates a publishing plan. Actual deployment and video upload are separate actions.
+- The deployment document records website and YouTube publishing. Audio generation and recording belong to implementation; actual publication is separate.
 
 ## Context is entered once
 
@@ -39,3 +39,5 @@ Stage 01 establishes the confirmed course brief. Stages 02–07 inherit it from 
 ## Design and implementation documentation
 
 Stage 03 records the adopted GraphL design in `03-design/design.md`; it has no generation prompt. Stage 04 documents implementation separately from authoring. Use `04-implementation/ai-prompt.md` for a target course or section, and record progress in `04-implementation/authoring-progress.md`.
+
+Testing, deployment, and feedback use workflow documents rather than AI prompts. See `05-test/testing.md`, `06-deployment/deployment.md`, and `07-feedback/feedback.md`.

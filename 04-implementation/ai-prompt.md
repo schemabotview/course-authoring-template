@@ -37,3 +37,7 @@ Update the actual section and scene files, supporting registries only where nece
 Suggested progress states: Scaffold, Drafted, Author-checked, Reviewed. Record runtime verification and visual review independently, with actual evidence or Pending status. Reviewed means a real recorded review occurred; it does not imply publication approval. Never mark a course release-ready while required checks remain pending.
 
 Do not add mandatory formal assessments or exercises. Do not silently remove older course-wide requirements; flag remaining document-alignment decisions. Ask only when missing information blocks dependent work or changes approved scope, and continue useful independent work.
+
+## Testing and production handoff
+
+Follow `../05-test/testing.md`: check authored content during implementation, then record actual manual user review. Audio manifest generation, a selected Colab audio run, and course recording belong to implementation production, after content review and when authorized. Website publication and YouTube upload belong to deployment; do not assume either destination is already enabled. Learner feedback is manually collected as described in `../07-feedback/feedback.md`.
