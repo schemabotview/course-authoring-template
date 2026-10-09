@@ -31,7 +31,7 @@ Manifest generation, Colab audio generation, and video recording are implementat
 ## Optional app starter
 
 `../examples/sample-app` supplies a small working app, not subject course content. It uses
-`src/content/<course>/<section>.ts`, corresponding scenes, a shared-map helper, and native shell
+`src/content/<course>/<section>.ts`, corresponding scenes, a shared-map helper, and descriptive shell
 headers. Copy its source/configuration into the subject root, adjust package identity/base/local
 library path, install dependencies, and generate that subject’s lockfile. Its `check-content.mjs`
 and `check-preview.mjs` show structural and desktop/mobile checks to adapt to the approved plan.

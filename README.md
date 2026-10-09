@@ -45,14 +45,15 @@ Testing, deployment, and feedback use workflow documents rather than AI prompts.
 ## Runnable app example
 
 See [examples/sample-app](examples/sample-app/README.md) for a three-section React/TypeScript/Vite
-app using native ui-shell and ui-flow. It demonstrates a grouped shared map, focused command/result
+app using ui-shell and ui-flow. It demonstrates a grouped shared map, focused command/result
 and table scenes, descriptive names, supported icons, slides, narration, metadata, and structural/
 preview checks. Copy only the app source/configuration when starting a subject repository; then
 choose that subject’s dependencies, base path, curriculum, story, sources, and verification process.
 Do not copy generated outputs or pretend sample UI checks validated subject content.
 
-The sample currently consumes the local ui-shell 0.10.0 checkout (unpublished) using a documented
-relative file dependency. Once separately published, replace it with a pinned registry version.
+The sample consumes the local ui-shell checkout using a documented relative file dependency.
+The shared-header change was reverted at the user’s request; current shell 0.9.0 displays
+concept · descriptive course ID. Use a pinned registry version when available.
 The sample README explains both workspace layout and copying into a subject repository.
 
 Reusable conventions live in these prompts/design documents. Shared shell behavior (headers,

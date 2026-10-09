@@ -74,9 +74,10 @@ Final section compositions, subject environment, finished palette, reference pre
 
 Use descriptive course/section IDs and filenames, following the SQL app (`foundations/system-roles.ts`).
 Keep the course order in its registry and section order in the course index. ui-shell owns the route
-contract `<course-id>-<section-id>`; IDs are routing/audio identity, not display titles. Use native
-concept · course-title headers in shell 0.10.0 or later, with `courseLabel="id"` available for legacy
-captures. The local unreleased build can be consumed by the sample; publishing is a separate action.
+contract `<course-id>-<section-id>`; IDs are routing/audio identity, not display titles. The current ui-shell header uses concept · course ID, so descriptive IDs produce useful labels.
+Full course-title headers are not a current native capability: the user requested reverting that
+shared change. Do not claim `courseLabel` is supported. Any subject-specific header adaptation
+must remain local and be verified against its pinned dependency.
 
 Canonical patterns can use nested bands, short lists, code cards, or tables rather than generic
 prose-node chains. Use a master map only when a shared vocabulary benefits multiple sections.

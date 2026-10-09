@@ -22,3 +22,12 @@ These are actual checks of this example, not certification of a new subject cour
 
 The UI sample is author-checked. Independent human review and comprehensive accessibility review
 remain pending. A new subject must start its own check record and technical-source verification.
+
+## Shared-header rollback — 2026-10-09
+
+The original 0.10.0 checks above are historical. User requested reverting that shared-shell
+change; source is back to 0.9.0, and the local sample dependency/lockfile follows it. The sample
+still displays `WORKSHOP · FOUNDATIONS` because its course ID is descriptive (`foundations`).
+It does not require native full-title headers or the removed courseLabel prop. Rebuilt sample
+and reran browser checks against the reverted build; separate rollback results are retained in
+`checks/preview-after-shell-revert.json`. Authoring examples and guidance remain in place.
