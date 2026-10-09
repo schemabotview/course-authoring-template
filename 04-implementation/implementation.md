@@ -22,8 +22,18 @@ Record checks actually performed, their environments/results, pending reviews, a
 
 After section narration is authored and reviewed, generate the audio manifest with `npm run gen:audio`. Run the chosen Colab audio-generation notebook against that manifest and return the generated WAV files to `public/audio/<course-id>/<section-id>.wav`. Check that every clip matches the reviewed narration and intended section. Handle model access credentials in the runtime, never in committed notebook output or content.
 
-The supplied SQL example includes a Colab notebook, but it was not copied into linux-authoring. Selecting/adapting the Linux Colab notebook and its input/output transfer process remains pending. Do not claim that a Colab run or audio generation has occurred.
+Select a subject-appropriate notebook and document its input/output transfer process before production. Do not claim a Colab run or audio generation unless it occurred.
 
 Once audio and visuals are reviewed, use the shared `npm run record -- <course-id>` command to produce course video assets. Recording requires the toolchain's actual browser/media prerequisites; inspect its supported arguments before adding flags. Review the resulting audio/video and captions when produced. No narration audio or video has been generated yet.
 
 Manifest generation, Colab audio generation, and video recording are implementation production steps. Uploading the finished video to YouTube and publishing website assets are deployment steps. These production actions run only when requested or authorized; authoring a section does not automatically trigger them.
+
+## Optional app starter
+
+`../examples/sample-app` supplies a small working app, not subject course content. It uses
+`src/content/<course>/<section>.ts`, corresponding scenes, a shared-map helper, and native shell
+headers. Copy its source/configuration into the subject root, adjust package identity/base/local
+library path, install dependencies, and generate that subject’s lockfile. Its `check-content.mjs`
+and `check-preview.mjs` show structural and desktop/mobile checks to adapt to the approved plan.
+Record commands actually run separately from the available command list. See the sample README
+for local shared-package setup before package publication.

@@ -8,7 +8,7 @@
 
 Codex or Claude checks each section as it is authored: technical claims and references, scene/slide/narration consistency, course-spine continuity, types, registry links, build behavior, and visual rendering when a preview is available. Execute commands only in an authorized isolated environment. Record what actually ran and what remains unverified in `04-implementation/authoring-progress.md`.
 
-For Linux, use the existing `npm run check` and `npm run build`. The preliminary release guard is `node scripts/check-content.mjs --release`; it is not a substitute for complete review. AI review and successful compilation alone do not prove technical correctness.
+The sample provides `npm run check`, `npm run build`, and `npm run check:preview`. Adapt its checks to the subject’s plan and runtime; do not assume a release guard exists or equate structural validation with review. AI review and successful compilation alone do not prove technical correctness.
 
 ## Manual user review
 

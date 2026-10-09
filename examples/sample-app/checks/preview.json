@@ -1,0 +1,95 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "route": "foundations-system-roles",
+      "width": 1440,
+      "height": 900,
+      "header": {
+        "text": "WORKSHOP · FOUNDATIONS",
+        "right": 246.84375
+      },
+      "nodes": 7,
+      "overflow": false,
+      "links": 0,
+      "slideTop": 244.640625,
+      "slideBottom": 655.359375
+    },
+    {
+      "route": "foundations-reading-a-command",
+      "width": 1440,
+      "height": 900,
+      "header": {
+        "text": "WORKSHOP · FOUNDATIONS",
+        "right": 246.84375
+      },
+      "nodes": 5,
+      "overflow": false,
+      "links": 0,
+      "slideTop": 230.515625,
+      "slideBottom": 669.484375
+    },
+    {
+      "route": "foundations-interpreting-results",
+      "width": 1440,
+      "height": 900,
+      "header": {
+        "text": "WORKSHOP · FOUNDATIONS",
+        "right": 246.84375
+      },
+      "nodes": 3,
+      "overflow": false,
+      "links": 0,
+      "slideTop": 225.265625,
+      "slideBottom": 674.734375
+    },
+    {
+      "route": "foundations-system-roles",
+      "width": 390,
+      "height": 844,
+      "header": {
+        "text": "WORKSHOP · FOUNDATIONS",
+        "right": 229.140625
+      },
+      "nodes": 7,
+      "overflow": false,
+      "links": 0,
+      "slideTop": 248.140625,
+      "slideBottom": 595.859375
+    },
+    {
+      "route": "foundations-reading-a-command",
+      "width": 390,
+      "height": 844,
+      "header": {
+        "text": "WORKSHOP · FOUNDATIONS",
+        "right": 229.140625
+      },
+      "nodes": 5,
+      "overflow": false,
+      "links": 0,
+      "slideTop": 248.140625,
+      "slideBottom": 595.859375
+    },
+    {
+      "route": "foundations-interpreting-results",
+      "width": 390,
+      "height": 844,
+      "header": {
+        "text": "WORKSHOP · FOUNDATIONS",
+        "right": 229.140625
+      },
+      "nodes": 3,
+      "overflow": false,
+      "links": 0,
+      "slideTop": 244.109375,
+      "slideBottom": 599.890625
+    }
+  ],
+  "navigation": [
+    "Next",
+    "Shift+Left",
+    "Reference scene",
+    "Back"
+  ]
+}

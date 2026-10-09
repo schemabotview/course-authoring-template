@@ -25,7 +25,7 @@ Use this workflow for Linux, Python, Java, React, SQL, Spark, dbt, Terraform, cl
 ## Working conventions
 
 - Prompts are reusable instructions; generated documents are course-specific artifacts. Design and implementation guidance are reusable; implementation records and progress must be populated with actual subject-project results.
-- Preserve stable requirement, outcome, course, and section IDs across revisions.
+- Use descriptive course/section IDs and filenames. Preserve adopted identifiers across revisions; record deliberate migrations. Requirement/outcome IDs can remain traceability labels.
 - Record input revisions, assumptions, and Draft/Approved status. An AI-generated checklist is not evidence that its checks ran.
 - Author courses section by section after reviewing the curriculum and adopted design; `implementation.md` describes their production process.
 - Website content and video scripts should derive from the same approved section source.
@@ -41,3 +41,21 @@ Stage 01 establishes the confirmed course brief. Stages 02–07 inherit it from 
 Stage 03 records the adopted GraphL design in `03-design/design.md`; it has no generation prompt. Stage 04 documents implementation separately from authoring. Use `04-implementation/ai-prompt.md` for a target course or section, and record progress in `04-implementation/authoring-progress.md`.
 
 Testing, deployment, and feedback use workflow documents rather than AI prompts. See `05-test/testing.md`, `06-deployment/deployment.md`, and `07-feedback/feedback.md`.
+
+## Runnable app example
+
+See [examples/sample-app](examples/sample-app/README.md) for a three-section React/TypeScript/Vite
+app using native ui-shell and ui-flow. It demonstrates a grouped shared map, focused command/result
+and table scenes, descriptive names, supported icons, slides, narration, metadata, and structural/
+preview checks. Copy only the app source/configuration when starting a subject repository; then
+choose that subject’s dependencies, base path, curriculum, story, sources, and verification process.
+Do not copy generated outputs or pretend sample UI checks validated subject content.
+
+The sample currently consumes the local ui-shell 0.10.0 checkout (unpublished) using a documented
+relative file dependency. Once separately published, replace it with a pinned registry version.
+The sample README explains both workspace layout and copying into a subject repository.
+
+Reusable conventions live in these prompts/design documents. Shared shell behavior (headers,
+wrapping, navigation, slide layout) belongs in ui-shell; scene rendering/icons belong in ui-flow.
+A subject master map, narration, citations, and actual verification history stay with that subject.
+Dense scenes and link-free slides are choices, not universal template requirements.

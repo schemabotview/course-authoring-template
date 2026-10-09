@@ -27,7 +27,7 @@ Consume public package exports. Do not copy shared renderers into subject reposi
 | Slide | State the core explanation and essential qualifications | Keep concise enough to remain readable without clipping |
 | Narration | Explain the scene and connect it to the course story | Use natural speech; do not merely read every slide bullet |
 
-The shared Section type contains id, title, scene, optional focus, slide, and narration. Course contains id, title, and sections. Source references, review status, driving questions, and environment assumptions require authoring metadata; the current shell has no dedicated fields for them. Retain them in the section source and progress records. Use a concise Markdown source link on the slide when it fits; complete references remain inspectable in source. A richer learner-facing reference view is deferred, not claimed implemented.
+The shared Section type contains id, title, scene, optional focus, slide, and narration. Course contains id, title, and sections. Source references, review status, driving questions, and environment assumptions require authoring metadata; the current shell has no dedicated fields for them. Retain them in the section source and progress records. Source links on slides are optional per-course choices; complete references remain inspectable in source even when learner-facing links are omitted. A richer learner-facing reference view is deferred, not claimed implemented.
 
 ## Canonical scene patterns
 
@@ -45,7 +45,7 @@ Use only capabilities available in the installed engine. Node positions belong t
 
 Read the learning-path central question, evolving story, and each course's driving question before authoring. Keep recurring example names and system entities consistent across sections. Explain why the current section follows the previous one and what it contributes to the destination. Carry that connection through the scene, slide, and narration without adding introductory or recap sections outside the approved plan.
 
-For Linux, the story follows a small team system through orientation, files, access, operations, communication and preservation, automation, and diagnosis. Maintain a compact continuity record of example users, hosts, directories, services, and sample data as these are selected; do not imply they are chosen already.
+Maintain the approved subject’s story and a compact continuity record of recurring identities, systems, paths, services, and sample data as selected. The sample app’s fictional queue illustrates consistency; it is not a default story to impose on other subjects.
 
 ## Website and video composition
 
@@ -68,4 +68,32 @@ These are review criteria, not claims that full accessibility or visual QA has p
 
 ## Decisions still open
 
-Final section compositions, Linux distribution and lab environment, finished palette, reference presentation improvements, audio generation, captions, video packaging, and any progressive scene behavior. The scaffolding does not settle these decisions.
+Final section compositions, subject environment, finished palette, reference presentation, audio generation, captions, video packaging, and any progressive scene behavior. The scaffolding does not settle these decisions.
+
+## Reusable composition conventions
+
+Use descriptive course/section IDs and filenames, following the SQL app (`foundations/system-roles.ts`).
+Keep the course order in its registry and section order in the course index. ui-shell owns the route
+contract `<course-id>-<section-id>`; IDs are routing/audio identity, not display titles. Use native
+concept · course-title headers in shell 0.10.0 or later, with `courseLabel="id"` available for legacy
+captures. The local unreleased build can be consumed by the sample; publishing is a separate action.
+
+Canonical patterns can use nested bands, short lists, code cards, or tables rather than generic
+prose-node chains. Use a master map only when a shared vocabulary benefits multiple sections.
+Keep its complete overview separate from curricular scenes. Focus each section on the layers it
+teaches; do not repeat every subsystem in the introduction. The sample demonstrates an LR
+relationship container: edge layout uses `flow`, whereas edge-free card grids use `cols`.
+
+Choose installed icon keys deliberately: memory, cpu, folder, terminal, network, and so on.
+Type `string` does not establish that a requested icon exists. Check rendered glyphs and avoid
+inherited storage/database icons where the node represents a directory.
+
+Measure both panes at representative desktop/mobile sizes. Aim for useful space use, rather than
+maximum density. Preserve header/footer clearance, short code lines, and readable slides. Whole-scene
+fitting without exposed zoom makes dense phone diagrams small; record that limit honestly. Avoid
+per-section CSS workarounds. Shared header/layout improvements belong in ui-shell; rendering and
+new diagram capabilities belong in ui-flow. Subject content belongs in its own repository.
+
+`examples/sample-app` is a small runnable reference, not a complete course or release approval.
+Its density and link-free slides are configurable choices. Do not copy its fictional commands,
+source claims, or actual-check record into a new subject as if validated there.

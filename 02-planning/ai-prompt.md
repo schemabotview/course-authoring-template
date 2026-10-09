@@ -23,8 +23,8 @@ Use exactly two content levels: **courses → sections**.
 - Aim for seven courses, allowing five to nine when scope warrants it.
 - Aim for seven sections per course, allowing five to nine when useful.
 - These counts are organizing preferences, not psychological laws. Do not add filler or combine unrelated material to meet a count.
-- Give each course a stable ID (`CRS-001` etc.), title, short purpose, and prerequisites.
-- Give each section a stable ID (`SEC-001` etc.), descriptive title, and a short paragraph explaining what it covers. Section IDs must be unique across the learning path.
+- Give each course a stable descriptive ID (`foundations`, `scripting`, etc.), title, short purpose, and prerequisites.
+- Give each section a stable descriptive ID (`system-roles`, `reading-a-command`, etc.), descriptive title, and a short paragraph explaining what it covers. Section IDs must be unique across the learning path.
 - Arrange courses and sections in prerequisite order. Introduce fundamentals before advanced applications, and revisit earlier skills naturally in later sections.
 - Keep sections coherent and manageable. Include practical demonstration coverage in descriptions where useful, without creating additional content levels.
 

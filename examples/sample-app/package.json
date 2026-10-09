@@ -1,0 +1,33 @@
+{
+  "name": "course-authoring-sample",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Three subject-neutral GraphL composition examples; not a finished course",
+  "scripts": {
+    "dev": "vite",
+    "check": "tsc --noEmit && node scripts/check-content.mjs",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "check:preview": "node scripts/check-preview.mjs"
+  },
+  "dependencies": {
+    "@graphlearning/flow": "1.2.0",
+    "@graphlearning/shell": "file:../../../ui-shell",
+    "@xyflow/react": "12.11.3",
+    "lucide-react": "^1.28.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "esbuild": "^0.25.0",
+    "puppeteer": "^25.3.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5"
+  }
+}
